@@ -1,4 +1,4 @@
 class Garage < ApplicationRecord
-  belongs_to :user
   has_many :coaches, dependent: :destroy
+  has_many :users, dependent: :destroy
 end

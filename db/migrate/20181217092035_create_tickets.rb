@@ -5,7 +5,7 @@ class CreateTickets < ActiveRecord::Migration[5.2]
       t.integer :customer_id
       t.boolean :status
       t.string :bus_stop
-      t.integer :seat_id
+      t.references :seat, foreign_key: true
 
       t.timestamps
     end

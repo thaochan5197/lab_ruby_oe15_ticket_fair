@@ -1,2 +1,35 @@
 en:
-  hello: "Hello world"
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+      success: "Success"
+
+  static_pages:
+    index:
+      ticket_price: "TICKET PRICE"
+      trusted_cars: "TRUSTED CARS"
+      only: "100% ONLY"
+      attractive_tourist_routes: "Attractive tourist routes"
+      search: "Seach_ticket"
+      point_start: "Point_start"
+      point_stop: "Point_stop"
+
+  layouts:
+    header:
+      hotline: "Hotline: 199969696"
+      email: "Email: kimtacgubin@gmail.com"
+      log_in: "Log in"
+      buy_ticket: "BUY TICKET"
+      find_ticket: "FIND TICKET"
+      ticket_cance: "TICKET CANCE"
+      garage: "GARAGE"
+      log_in: "Log in"
+      log_out: "Log out"
+
+  activerecord:
+    models:
+      users:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "confirmation"

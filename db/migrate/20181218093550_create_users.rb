@@ -4,8 +4,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email 
       t.string :phone_number
       t.boolean :admin
-      t.references :garage, foreign_key: true
       t.string :password
+      t.references :garage, foreign_key: true
       
       t.timestamps
     end
