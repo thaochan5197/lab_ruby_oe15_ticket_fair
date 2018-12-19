@@ -64,8 +64,8 @@ body{
 	min-height: 450px;
 } 
 .bg-section2{
-	background-image: url("https://cdn.explus.vn/media.phunutoday.vn/files/upload_images/2016/05/07/du-lich-mien-bac-1-ngay-3-phunutoday_vn.jpg");
-
+	background: url("https://cdn.explus.vn/media.phunutoday.vn/files/upload_images/2016/05/07/du-lich-mien-bac-1-ngay-3-phunutoday_vn.jpg") no-repeat;
+	background-repeat: round;
 }
 .form-ahihi{
 	box-shadow: 0 0 7px 3px #463d3d;
@@ -88,7 +88,8 @@ body{
 	box-shadow: 0 0 7px 3px #e0dddd;
 }
 .arc-w-h:hover{
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 .ml-img-1{
 	margin-left: 30%;
