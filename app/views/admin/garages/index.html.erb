@@ -31,7 +31,7 @@
             <% @garages.each do |gara| %>
             <tr>
               <td> <%= gara.name %> </td>
-              <td> <%= gara.image %> </td>
+              <td> <%= image_tag gara.image.url if gara.image? %> </td>
               <td> <%= gara.phone_number %> </td>
               <td> <%= gara.address %> </td>
               <td> <%= gara.info %> </td>

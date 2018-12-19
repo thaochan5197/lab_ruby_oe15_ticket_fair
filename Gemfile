@@ -8,8 +8,8 @@ gem "i18n-js"
 gem "figaro"
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0"
-gem 'bootstrap-sass'
-gem 'bootstrap3-rails'
+gem "bootstrap-sass"
+gem "bootstrap3-rails"
 gem "coffee-rails", "~> 4.2"
 gem "font-awesome-rails"
 gem "hirb"
@@ -23,6 +23,8 @@ gem "rails-i18n"
 gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "carrierwave"
+gem "mini_magick"
 
 group :development, :test do
   gem "pry-byebug"
