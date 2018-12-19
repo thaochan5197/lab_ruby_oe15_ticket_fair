@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "bus_stations", force: :cascade do |t|
     t.string "name"
-    t.bigint "city_id"
+    t.bigint "district_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["city_id"], name: "index_bus_stations_on_city_id"
+    t.index ["district_id"], name: "index_bus_stations_on_district_id"
   end
 
   create_table "cities", force: :cascade do |t|
@@ -30,9 +30,8 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "coaches", force: :cascade do |t|
     t.string "license_plate"
-    t.string "types"
+    t.integer "types"
     t.integer "seat_amount"
-    t.integer "seat_form"
     t.bigint "garage_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -43,15 +42,16 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.string "name"
     t.string "phone_number"
     t.string "email"
-    t.string "bus_stop"
+    t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "districts", force: :cascade do |t|
     t.string "name"
-    t.string "types"
     t.bigint "city_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["city_id"], name: "index_districts_on_city_id"
   end
 
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.string "code"
     t.integer "types"
     t.bigint "coach_id"
+    t.float "fare"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coach_id"], name: "index_seats_on_coach_id"
@@ -87,14 +88,11 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "tickets", force: :cascade do |t|
     t.bigint "trip_id"
-    t.bigint "customer_id"
-    t.integer "status", default: 2
-    t.string "code"
-    t.bigint "seat_id"
+    t.integer "customer_id"
     t.string "bus_stop"
+    t.bigint "seat_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["customer_id"], name: "index_tickets_on_customer_id"
     t.index ["seat_id"], name: "index_tickets_on_seat_id"
     t.index ["trip_id"], name: "index_tickets_on_trip_id"
   end
@@ -106,7 +104,6 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.string "city_finish"
     t.bigint "coach_id"
     t.boolean "is_repeated"
-    t.float "fare"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coach_id"], name: "index_trips_on_coach_id"
@@ -116,6 +113,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.string "email"
     t.string "phone_number"
     t.boolean "admin"
+    t.string "password"
     t.bigint "garage_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -123,11 +121,9 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.index ["garage_id"], name: "index_users_on_garage_id"
   end
 
-  add_foreign_key "bus_stations", "cities"
   add_foreign_key "coaches", "garages"
   add_foreign_key "stop_points", "bus_stations"
   add_foreign_key "stop_points", "trips"
-  add_foreign_key "tickets", "customers"
   add_foreign_key "tickets", "seats"
   add_foreign_key "tickets", "trips"
   add_foreign_key "trips", "coaches"
