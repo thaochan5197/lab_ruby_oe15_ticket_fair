@@ -1,0 +1,170 @@
+body, img, header, ul, div, p, h1,h2,h3,h4,h5,h6, section{
+	padding :0px;
+	margin:0px;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	color: #11719e;
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+body{
+	width: 100%;
+	height: auto;
+}
+.colorbg-dark{
+	background-color: #000;
+}
+.colorbg-red{
+	background-color: #e55042;
+}
+/*---------------------------------------------------------------Header--------------------*/
+.size-header{
+	min-height: 22px;
+	font-size: 14px;
+}
+.img-vi{
+	background-image: url(vi.png);
+}
+.img-en{
+	background-image: url(en.png);
+}
+.size-img-i18n{
+	width: 27px;
+    height: 19px;
+}
+
+/*---------------------------------------------------------------End Header--------------------*/
+
+/*---------------------------------------------------------------Section1--------------------*/
+.size-section-1{
+	min-height: 66px;
+}
+.img-car{
+	background-image: url(car.png);
+	width: 126px;
+    height: 66px;
+}
+.txt-section-1{
+	line-height: 66px;
+	height: 66px;
+}
+.txt-section-1:hover{
+	border-bottom: 5px solid #fff;
+}
+
+/*---------------------------------------------------------------End Section1--------------------*/
+
+/*---------------------------------------------------------------Section2--------------------*/
+.size-section-2{
+	min-height: 450px;
+} 
+.bg-section2{
+	background-image: url("https://cdn.explus.vn/media.phunutoday.vn/files/upload_images/2016/05/07/du-lich-mien-bac-1-ngay-3-phunutoday_vn.jpg");
+
+}
+.form-ahihi{
+	box-shadow: 0 0 7px 3px #463d3d;
+}
+.size-seach{
+	width: 175px !important;
+}
+/*---------------------------------------------------------------End Section2--------------------*/
+
+
+/*---------------------------------------------------------------Section3--------------------*/
+.section-3{
+	min-height: 350px;
+	background-color: #f3f3f3;
+}
+.arc-w-h{
+	width: 31%;
+	min-height: 250px;
+	background-color: #fff;
+	box-shadow: 0 0 7px 3px #e0dddd;
+}
+.arc-w-h:hover{
+	transform: scale(1.1);
+}
+.ml-img-1{
+	margin-left: 30%;
+}
+.ml-img-2{
+	margin-left: 35%;
+}
+
+/*---------------------------------------------------------------End Section3--------------------*/
+
+/* Style tab links */
+.section-4{
+	min-height:380px; 
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent{
+	height: 250px;
+	border: 1px solid #666;
+}
+
+/*---------------------------------------------------------------Footer--------------------*/
+
+.footer{
+	width: 100%;
+	background-color: #171717;
+	min-height: 304px;
+}
+.top-footer{
+	width: 90%;
+}
+.width-arc-footer{
+	width: 26%;
+}
+.div-img-footer{
+	width: 43%;
+}
+.nav-footer{
+	margin-top: 3rem;
+}
+.font-p1-footer{
+	font-size: 21px;
+}
+.font-p2-footer{
+	font-size: 14px;
+}
+.d3-footer{
+	margin-top: 3rem;
+	width: 75%;
+}
+.shadow-footer{
+	height:1px;
+	background-color: #fff;
+	width: 100%;
+}
+.email-address{
+	width: 85%;
+	border: 1px;
+    background-color: #000!important;
+}
+.email{
+    width: 25px;
+}
+.width-arc-footer{
+	min-width: 257px!important;
+}

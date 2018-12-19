@@ -1,0 +1,45 @@
+<section class="size-section-2 bg-section2 d-flex align-items-center">
+  <form class="mx-auto d-flex form-ahihi" action="#" method="GET">
+    <input type="text" name="startPoint" class="form-control" id="startPoint" placeholder="Điểm đi">
+    <input type="text" name="startPoint" class="form-control" id="startPoint" placeholder="Điểm đến">
+    <input class="form-control" type="date" name="bday">
+    <input type="submit" class="size-seach btn bg-danger font-weight-bold text-white" value="TÌM VÉ">
+  </form>
+</section>
+<section class="section-3">
+  <div class="container d-flex justify-content-between">
+    <arcticle class = "arc-w-h mt-5">
+      <%= image_tag "cartk", class: "mt-5 ml-img-2"%>
+      <h4 class="text-center font-weight-bold mt-3" >GIÁ VÉ RẺ NHẤT</h4>
+    </arcticle>
+    <arcticle class = "arc-w-h mt-5">
+      <%= image_tag "seatck", class: "mt-5 ml-img-1"%>
+      <h4 class="text-center font-weight-bold mt-3" >HÃNG XE UY TÍN</h4>
+    </arcticle>
+    <arcticle class = "arc-w-h mt-5">
+      <%= image_tag "bussp", class: "mt-5 ml-img-1"%>
+      <h4 class="text-center font-weight-bold mt-3">GIỮ CHỖ 100%</h4>
+    </arcticle>
+  </div>
+</section>
+<section class="section-4 container">
+  <h1 class="font-weight-bold mt-5 text-center">Các tuyến đường du lịch hấp dẫn</h1>
+  <div class="mt-5">
+    <button class="tablink" onclick="openPage('Home', this, 'orange')">Đà Lạt</button>
+    <button class="tablink" onclick="openPage('News', this, 'orange')" id="defaultOpen">Sa Pa</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Hà Giang</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">Hội An</button>
+    <div id="Home" class="tabcontent">
+    1
+    </div>
+    <div id="News" class="tabcontent">
+    2
+    </div>
+    <div id="Contact" class="tabcontent">
+    3
+    </div>
+    <div id="About" class="tabcontent">
+    4
+    </div>
+  </div>
+</section>
