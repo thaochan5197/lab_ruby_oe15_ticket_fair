@@ -3,8 +3,6 @@
 //= require i18n/translations
 //= require jquery
 //= require jquery-ui/widgets/autocomplete
-//= require cable
-//= require popper
 //= require rails-ujs
 //= require activestorage
 //= require bootstrap

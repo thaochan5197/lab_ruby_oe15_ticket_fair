@@ -13,7 +13,7 @@
 
  *= require style
  *= require_self
- *= require custom
+
  *= require font-awesome
  *= require jquery-ui/autocomplete
  *= require build/css/custom.min.css

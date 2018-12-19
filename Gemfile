@@ -7,8 +7,9 @@ gem "faker"
 gem "i18n-js"
 gem "figaro"
 gem "bcrypt", "3.1.12"
-gem "bootsnap", ">= 1.1.0", require: false
-gem "bootstrap"
+gem "bootsnap", ">= 1.1.0"
+gem 'bootstrap-sass'
+gem 'bootstrap3-rails'
 gem "coffee-rails", "~> 4.2"
 gem "font-awesome-rails"
 gem "hirb"
