@@ -10,9 +10,10 @@ en:
       trusted_cars: "TRUSTED CARS"
       only: "100% ONLY"
       attractive_tourist_routes: "Attractive tourist routes"
-      search: "Seach_ticket"
-      point_start: "Point_start"
-      point_stop: "Point_stop"
+      search: "Seach ticket"
+      point_start: "Point start"
+      point_stop: "Point stop"
+      date_start: "Date start"
 
   layouts:
     header:

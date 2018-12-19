@@ -39,7 +39,6 @@ $(document).ready(function(){
       dataType: "json",
 
     }).done(function(result){
-        // console.log(result);
         $( ".startPoint" ).autocomplete({
           source: result
         });
@@ -110,4 +109,3 @@ $(document).ready(function(){
     }
   });
 });
-
