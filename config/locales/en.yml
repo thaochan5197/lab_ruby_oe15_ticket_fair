@@ -25,6 +25,9 @@ en:
       garage: "GARAGE"
       log_in: "Log in"
       log_out: "Log out"
+    header_admin:
+      profile: "My Profile"
+      logout: "Logout"
 
   activerecord:
     models:
@@ -33,3 +36,8 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "confirmation"
+
+  admin:
+    garages:
+      title: "Nhà xe"
+

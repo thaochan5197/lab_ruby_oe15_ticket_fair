@@ -25,14 +25,12 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
-    t.string "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "types"
   end
 
   create_table "coaches", force: :cascade do |t|
     t.string "license_plate"
-    t.integer "type"
+    t.integer "types"
     t.integer "seat_amount"
     t.bigint "garage_id"
     t.datetime "created_at", null: false
@@ -44,6 +42,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
     t.string "name"
     t.string "phone_number"
     t.string "email"
+    t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -68,7 +67,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "seats", force: :cascade do |t|
     t.string "code"
-    t.integer "type"
+    t.integer "types"
     t.bigint "coach_id"
     t.float "fare"
     t.datetime "created_at", null: false
@@ -78,7 +77,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   create_table "stop_points", force: :cascade do |t|
     t.time "time_stop"
-    t.integer "type"
+    t.integer "types"
     t.bigint "trip_id"
     t.bigint "bus_station_id"
     t.datetime "created_at", null: false
@@ -90,7 +89,6 @@ ActiveRecord::Schema.define(version: 2018_12_19_085845) do
   create_table "tickets", force: :cascade do |t|
     t.bigint "trip_id"
     t.integer "customer_id"
-    t.boolean "status"
     t.string "bus_stop"
     t.bigint "seat_id"
     t.datetime "created_at", null: false

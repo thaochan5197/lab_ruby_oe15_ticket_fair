@@ -8,7 +8,4 @@
 //= require rails-ujs
 //= require activestorage
 //= require bootstrap
-//= require global/scripts/app
-//= require global/plugins/bootstrap-datepicker/js/bootstrap-datepicker
-//= require pages/scripts/components-date-time-pickers
 //= require custom

@@ -1,7 +1,10 @@
-@import 'bootstrap';
-@import 'global/css/components';
-@import 'layouts/layout/css/custom';
-@import 'global/plugins/bootstrap-fileinput/bootstrap-fileinput';
-@import 'global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3';
-@import 'global/plugins/bootstrap-timepicker/css/bootstrap-timepicker';
-@import 'global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'nprogress/nprogress.css';
+@import 'bootstrap-daterangepicker/daterangepicker.css';
+@import 'build/css/custom.min.css';
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(asset_path('glyphicons-halflings-regular.eot'));
+  src: url(asset_path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), url(asset_path('glyphicons-halflings-regular.woff')) format('woff'), url(asset_path('glyphicons-halflings-regular.ttf')) format('truetype'), url(asset_path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
+}
