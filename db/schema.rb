@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_18_093712) do
+ActiveRecord::Schema.define(version: 2018_12_19_085845) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,9 +80,10 @@ ActiveRecord::Schema.define(version: 2018_12_18_093712) do
     t.time "time_stop"
     t.integer "type"
     t.bigint "trip_id"
-    t.integer "bus_station_id"
+    t.bigint "bus_station_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["bus_station_id"], name: "index_stop_points_on_bus_station_id"
     t.index ["trip_id"], name: "index_stop_points_on_trip_id"
   end
 
@@ -91,9 +92,10 @@ ActiveRecord::Schema.define(version: 2018_12_18_093712) do
     t.integer "customer_id"
     t.boolean "status"
     t.string "bus_stop"
-    t.integer "seat_id"
+    t.bigint "seat_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["seat_id"], name: "index_tickets_on_seat_id"
     t.index ["trip_id"], name: "index_tickets_on_trip_id"
   end
 
@@ -113,14 +115,18 @@ ActiveRecord::Schema.define(version: 2018_12_18_093712) do
     t.string "email"
     t.string "phone_number"
     t.boolean "admin"
+    t.string "password"
     t.bigint "garage_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
     t.index ["garage_id"], name: "index_users_on_garage_id"
   end
 
   add_foreign_key "coaches", "garages"
+  add_foreign_key "stop_points", "bus_stations"
   add_foreign_key "stop_points", "trips"
+  add_foreign_key "tickets", "seats"
   add_foreign_key "tickets", "trips"
   add_foreign_key "trips", "coaches"
   add_foreign_key "users", "garages"

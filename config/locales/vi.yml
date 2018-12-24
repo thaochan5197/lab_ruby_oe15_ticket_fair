@@ -1,0 +1,35 @@
+vi:
+  sessions:
+    create:
+      invalid:  "Email / mật khẩu không hợp lệ"
+      success: "Thành công"
+
+  static_pages:
+    index:
+      ticket_price: "GIÁ VÉ RẺ NHẤT"
+      trusted_cars: "HÃNG XE UY TÍN"
+      only: "GIỮ CHỖ 100%"
+      attractive_tourist_routes: "Các tuyến đường du lịch hấp dẫn"
+      search: "Tìm_vé"
+      point_start: "Điểm_đi"
+      point_stop: "Điểm_đến"
+
+  layouts:
+    header:
+      hotline: "Đường dây nóng: 199969696"
+      email: "Email: kimtacgubin@gmail.com"
+      log_in: "Đăng nhập"
+      buy_ticket: "MUA VÉ"
+      find_ticket: "TÌM VÉ"
+      ticket_cance: "HỦY VÉ"
+      garage: "NHÀ XE"
+      log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận"

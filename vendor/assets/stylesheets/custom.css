@@ -37,12 +37,14 @@ body{
 	width: 27px;
     height: 19px;
 }
-
 /*---------------------------------------------------------------End Header--------------------*/
 
 /*---------------------------------------------------------------Section1--------------------*/
 .size-section-1{
 	min-height: 66px;
+}
+.with-50{
+	width: 50%;
 }
 .img-car{
 	background-image: url(car.png);
@@ -64,7 +66,7 @@ body{
 	min-height: 450px;
 } 
 .bg-section2{
-	background: url("https://cdn.explus.vn/media.phunutoday.vn/files/upload_images/2016/05/07/du-lich-mien-bac-1-ngay-3-phunutoday_vn.jpg") no-repeat;
+	background: url("http://cdn.kul.vn/data/article/2016/07/08/hawaii_1467971479.jpg") no-repeat;
 	background-repeat: round;
 }
 .form-ahihi{

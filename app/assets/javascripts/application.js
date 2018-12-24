@@ -1,4 +1,4 @@
-//= require jquery.min
+//= require jquery
 //= require custom
 //= require cable
 //= require popper

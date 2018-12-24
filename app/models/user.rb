@@ -1,3 +1,5 @@
 class User < ApplicationRecord
-  has_many :garages
+  belongs_to :garages
+
+  has_secure_password
 end
