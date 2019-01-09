@@ -1,4 +1,10 @@
 vi:
+  evaluators:
+    Chon_cho: "Chọn chỗ"
+    an: "Ẩn"
+    dong: "Đóng"
+    xem_chuyen_xe: "Xem chuyến xe"
+
   sessions:
     create:
       invalid:  "Email / mật khẩu không hợp lệ"
