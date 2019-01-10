@@ -3,15 +3,15 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.3"
 
-gem "faker"
-gem "i18n-js"
-gem "figaro"
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap"
 gem "coffee-rails", "~> 4.2"
+gem "faker"
+gem "figaro"
 gem "font-awesome-rails"
 gem "hirb"
+gem "i18n-js"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "jquery-ui-rails"

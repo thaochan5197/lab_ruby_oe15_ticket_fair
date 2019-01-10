@@ -7,7 +7,7 @@ class Customer < ApplicationRecord
 
   validates :name, presence: true
   validates :phone_number, presence: true
-  validates :email, format: {with: VALID_EMAIL_REGEX}, allow_nil: true
+  validates :email, format: {with: VALID_EMAIL_REGEX}, allow_blank: true
 
   before_save :downcase_email
 

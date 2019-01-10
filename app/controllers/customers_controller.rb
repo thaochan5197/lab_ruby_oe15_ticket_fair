@@ -3,8 +3,7 @@ class CustomersController < ApplicationController
     check_customer_exist
   end
 
-  def update
-  end
+  def update; end
 
   private
 
@@ -15,7 +14,8 @@ class CustomersController < ApplicationController
       @tickets = []
       @id_tickets = []
       params[:customer][:tickets_attributes].each do |p|
-        @customer.tickets.create trip_id: p[1][:trip_id], seat_id: p[1][:seat_id]
+        @ticket = @customer.tickets.create trip_id: p[1][:trip_id], 
+          seat_id: p[1][:seat_id]
         @id_tickets << @ticket.id
         @tickets << @ticket
       end
@@ -25,7 +25,7 @@ class CustomersController < ApplicationController
 
       if @customer.save
         @tickets = @customer.tickets
-        @id_tickets = @tickets.map { |t| t.id }
+        @id_tickets = @tickets.ids
         render "tickets/pay"
       else
         flash[:danger] = t ".full_information"

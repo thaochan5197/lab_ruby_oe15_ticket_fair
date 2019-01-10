@@ -12,12 +12,13 @@ class Ticket < ApplicationRecord
   scope :sorted, ->{order created_at: :desc}
   scope :join_customer, ->{joins :customer}
   scope :search_ticket, (lambda do |code, phone_number|
-      where("tickets.code = ?", code).where("customers.phone_number = ?", phone_number)
+    where("tickets.code = ?", code)
+      .where("customers.phone_number = ?", phone_number)
   end)
 
   private
 
   def create_code
-    update code: SecureRandom.alphanumeric(8).upcase().to_s
+    update code: SecureRandom.alphanumeric(8).upcase.to_s
   end
 end
