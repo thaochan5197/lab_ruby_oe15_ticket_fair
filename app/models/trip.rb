@@ -19,7 +19,7 @@ class Trip < ApplicationRecord
 
   def dowcase_atributes
     %w(city_start city_finish).map do |p|
-      (send "#{p}").downcase!
+      (send p.to_s).downcase!
     end
   end
 end
