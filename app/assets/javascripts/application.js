@@ -4,6 +4,8 @@
 //= require jquery
 //= require jquery-ui/widgets/autocomplete
 //= require rails-ujs
+//= require turbolinks
 //= require activestorage
 //= require bootstrap
 //= require custom
+//= require_tree .

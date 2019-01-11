@@ -1,4 +1,8 @@
 //= require jquery
+//= require datatables
+//= require rails-ujs
+//= require turbolinks
+//= require popper
 //= require bootstrap/dist/js/bootstrap.min.js
 //= require fastclick/lib/fastclick.js
 //= require nprogress/nprogress.js
@@ -12,3 +16,4 @@
 //= require moment/min/moment.min.js
 //= require bootstrap-daterangepicker/daterangepicker.js
 //= require build/js/custom.min.js
+//= require_tree .

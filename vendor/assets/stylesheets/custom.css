@@ -64,7 +64,7 @@ body{
 /*---------------------------------------------------------------Section2--------------------*/
 .size-section-2{
 	min-height: 450px;
-} 
+}
 .bg-section2{
 	background: url("http://cdn.kul.vn/data/article/2016/07/08/hawaii_1467971479.jpg") no-repeat;
 	background-repeat: round;
@@ -104,7 +104,7 @@ body{
 
 /* Style tab links */
 .section-4{
-	min-height:380px; 
+	min-height:380px;
 }
 .tablink {
   background-color: #555;
@@ -171,3 +171,4 @@ body{
 .width-arc-footer{
 	min-width: 257px!important;
 }
+

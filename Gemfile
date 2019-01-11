@@ -8,7 +8,6 @@ gem "i18n-js"
 gem "figaro"
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0"
-gem "bootstrap-sass"
 gem "bootstrap"
 gem "coffee-rails", "~> 4.2"
 gem "font-awesome-rails"
@@ -25,6 +24,9 @@ gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "carrierwave"
 gem "mini_magick"
+gem "kaminari"
+gem 'jquery-datatables'
+
 
 group :development, :test do
   gem "pry-byebug"

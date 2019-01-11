@@ -14,7 +14,7 @@
         <div class="clearfix"></div>
       </div>
       <div class="x_content" style="display: block;">
-        <table class="table table-bordered">
+        <table class="table table-striped table-bordered bulk_action dataTable no-footer">
           <thead>
             <tr>
               <th> Tên </th>
@@ -28,21 +28,21 @@
           </thead>
           <tbody>
             <% if @garages.any? %>
-            <% @garages.each do |gara| %>
-            <tr>
-              <td> <%= gara.name %> </td>
-              <td> <%= image_tag gara.image.url if gara.image? %> </td>
-              <td> <%= gara.phone_number %> </td>
-              <td> <%= gara.address %> </td>
-              <td> <%= gara.info %> </td>
-              <td>
-                <%= link_to "Edit", "#", class: "edit" %>
-              </td>
-              <td>
-                <%= link_to "Delete", "#", class: "delete" %>
-              </td>
-            </tr>
-            <% end %>
+              <% @garages.each do |gara| %>
+                <tr>
+                  <td> <%= gara.name %> </td>
+                  <td> <%= image_tag gara.image.url if gara.image? %> </td>
+                  <td> <%= gara.phone_number %> </td>
+                  <td> <%= gara.address %> </td>
+                  <td> <%= gara.info %> </td>
+                  <td>
+                    <%= link_to "Edit", edit_admin_garage_path(gara), class: "btn btn-primary" %>
+                  </td>
+                  <td>
+                    <%= link_to "delete", admin_garage_path(gara), method: :delete, data: { confirm: "You sure?"}, class: "btn btn-danger" %>
+                  </td>
+                </tr>
+              <% end %>
             <% end %>
           </tbody>
         </table>

@@ -11,9 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
 
- *= require style
+ *= require style_admin
  *= require_self
-
  *= require font-awesome
- *= require jquery-ui/autocomplete
+ *= require build/css/custom.min.css
  */
