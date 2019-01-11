@@ -1,5 +1,5 @@
 module GaragesHelper
-  def check_seat seat
+  def check_seat seat, trip
     ticket = seat.tickets.find_by trip_id: trip.id
     if ticket.nil? || ticket.status_cancel?
       "available"
