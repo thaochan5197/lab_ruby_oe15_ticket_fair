@@ -12,9 +12,14 @@ a:hover{
 li{
 	list-style-type:none;
 }
+
 body{
 	width: 100%;
 	height: auto;
+}
+
+.with_100{
+	width: 100%;
 }
 .colorbg-dark{
 	background-color: #000;
@@ -170,4 +175,69 @@ body{
 }
 .width-arc-footer{
 	min-width: 257px!important;
+}
+
+.left1{
+	width: "88px";
+}
+.left1{
+	width: "100px";
+}
+.custmobie{
+	color: red; 
+	margin-top: 0px; 
+	padding-left: 10px;
+}
+
+.thanhtoan{
+	margin-top: 15px;
+}
+
+.submit-pay{
+	background-color: rgb(226, 70, 72);
+}
+
+.errosubmit{
+	color: red; 
+	margin-top: 10px; 
+	margin-bottom: 5px;
+}
+
+.green-bus{font-size: 12px; font-style: italic;}
+.green-bus ul,.green-bus li { list-style: circle;}
+.green-bus ul { padding-left: 25px;}
+.green-bus>span{color:red;font-weight: 600;}
+
+.withst{
+	width: 50%;
+}
+
+.pdl0{
+	padding-left: 0px;
+}
+
+.point-name-1{
+	width: 250px; 
+	padding-left: 20px;
+}
+
+.point-time{
+	text-align: left;
+	padding-left: 5px;
+}
+
+.pdll{
+	padding-left: 0px;
+}
+
+.pan-index{
+	margin-top:5px !important;
+}
+
+.vtca{
+	vertical-align: top withst;
+}
+
+.vtct{
+	vertical-align: top;
 }
