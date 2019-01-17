@@ -68,7 +68,7 @@
         <tr class="trOfficePickup">
           <td class="tdLeft"><%= t ".start_point" %> <span class="starRed">*</span></td>
           <td class="tdRight">
-            <%= f.select :bus_stop, options_for_select(list_start_point trip, "Select")%>
+            <%= f.select :bus_stop, options_for_select(list_start_point(trip), "Select")%>
           </td>
         </tr>
         <div class="list_ticket">

@@ -6,7 +6,7 @@
       </p>
       <ul>
         <% seats.types_two.each do |seat| %>
-          <% status = check_seat seat %>
+          <% status = check_seat seat, trip %>
           <li class="seat sleeper <%= status %> "  data="<%= seat.code %>" type="1">
             <a class="seatpick-<%= status %>" data-status="<%= status %>" 
               data-trip="<%= trip.id %>" data-bus-station=" " data-fare="<%= trip.fare %>"
@@ -26,7 +26,7 @@
     <p class="lower-driver"><span class="icon2 txt-2"></span></p>
     <ul>
       <% seats.types_one.each do |seat| %>
-        <% status = check_seat seat %>
+        <% status = check_seat seat, trip %>
         <li class="seat sleeper <%= status %> "  data="<%= seat.code %>" type="1">
           <a class="seatpick-<%= status %>" data-status="<%= status %>" 
             data-trip="<%= trip.id %>" data-bus-station=" " data-fare="<%= trip.fare %>"
